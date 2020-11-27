@@ -81,7 +81,7 @@ public class AndroidCamera2 implements CameraDevice {
 			File curr = new File(folder.getAbsoluteFile() + "\\" + filename);
 			fos = new FileOutputStream(curr);
 			trasferisci_foto(inSock, fos, lenght);
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
 		}finally{
